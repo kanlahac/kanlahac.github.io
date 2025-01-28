@@ -6,8 +6,22 @@ html {
     scroll-snap-align: start;
 }
 
-.about-me-bg{
-    background: url(../img/about_me_bg.svg);
+.bg-1{
+    background: url(../img/bg_1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-2{
+    background: url(../img/bg_2.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-3{
+    background: url(../img/bg_3.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
