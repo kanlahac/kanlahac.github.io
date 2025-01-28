@@ -7,172 +7,100 @@
 
     <title>Kanlahac</title>
 
+    <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
-<body class="bg-dark">
+<body>
 
 
-    <!-- MAIN NAVBAR -->
+    <!-- NAVIGATION BUTTONS -->
 
 
-    <nav id="main_nav" class="navbar bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
-        <div class="container">
-
-            <a class="navbar-brand" href="#">
-                <img src="https://picsum.photos/30" alt=""> &nbsp;&nbsp;
-                Kanlahac
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true">
-
-                <div class="offcanvas-header px-5">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Kanlahac</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-
-                <div class="offcanvas-body px-5">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about_me"><i data-feather="smile"></i>&nbsp;&nbsp; About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experience"><i data-feather="award"></i>&nbsp;&nbsp; Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects"><i data-feather="archive"></i>&nbsp;&nbsp; Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#youtube"><i data-feather="youtube"></i>&nbsp;&nbsp; Youtube</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-    </nav>
+    <div class="vertical-container bg-dark">
 
 
-    <!-- MAIN CONTENT -->
-
-    <!-- ABOUT ME -->
-    <section id="about_me" class="container-fluid min-vh-100 py-5" data-bs-spy="scroll" data-bs-target="#main_nav">
-        <div class="row d-flex flex-column justify-content-center align-items-center h-100 g-0 my-5">
-            <div class="col-12 text-center text-light">
-                <h1>About Me</h1>
-            </div>
-            <div class="col-12 my-5 text-center text-light">
-                <img class="rounded-circle" src="https://picsum.photos/300" alt="">
-            </div>
-            <div class="col-12 text-center text-light">
-                <p class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel risus in sapien consequat fermentum ac non libero. Aliquam sodales quam erat. Nunc vitae sodales lorem. Cras sit amet nisl eget orci sodales sodales. Praesent id risus leo. Integer posuere dui sem, id aliquam lacus auctor eu. Donec dignissim quis tellus in interdum. Nulla sagittis nibh eu massa sollicitudin, ultrices gravida tortor consequat. </p>
+        <!-- ABOUT ME -->
+        <div class="section d-flex justify-content-center align-items-center vh-100">
+            <div class="section-width">
+                <h1 class="text-center text-white title-text">I'm Kanlahac</h1>
+                <img src="" alt="">
+                <p class="text-center text-white">Crafting open-source video games for you to play, learn, and collaborate.</p>
             </div>
         </div>
-    </section>
 
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="container-fluid min-vh-100 bg-secondary py-5" data-bs-spy="scroll" data-bs-target="#main_nav">
-        <div class="row d-flex flex-column justify-content-center align-items-center h-100 g-0 my-5">
-            <div class="col-12 text-center text-light">
-                <h1>Experience</h1>
-            </div>
-            <div class="col-12 my-5 text-center text-light">
-                <img class="rounded-circle" src="https://picsum.photos/300" alt="">
-            </div>
-            <div class="col-12 text-center text-light">
-                <div class="col-6 mx-auto">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-12 col-xl-6">
-                            <img class="img-fluid" src="https://picsum.photos/300" alt="">
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <p class="mt-5 mt-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel risus in sapien consequat fermentum ac non libero. Aliquam sodales quam erat. Nunc vitae sodales lorem.</p>
-                        </div>
-                    </div>
-                </div>
+         <!-- ABOUT ME -->
+        <div class="section d-flex justify-content-center align-items-center vh-100 bg-secondary">
+            <div class="section-width text-center ">
+                <img class="mx-auto my-2" width="200px" src="https://godotengine.org/assets/press/logo_vertical_color_dark.svg" alt="">
+                <p class="text-center text-white">Powerful and open-source.</p>
+                <a class="btn btn-primary" href="https://godotengine.org/" target="_blank">Godot site</a>
             </div>
         </div>
-    </section>
 
 
-    <!-- PROJECTS -->
-    <section id="projects" class="container-fluid min-vh-100 py-5" data-bs-spy="scroll" data-bs-target="#main_nav">
-        <div class="row d-flex flex-column justify-content-center align-items-center h-100 g-0 my-5">
-            <div class="col-12 text-center text-light">
-                <h1>Projects</h1>
-            </div>
-            <div class="col-12 text-center text-light my-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                    
-                        <div class="card m-5 p-0" style="max-width: 20rem;">
-                            <h5 class="card-header p-4">
-                                Project Name
-                            </h5>
-                            <div class="card-body mb-3 p-0">
-                                <video src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" class="img-fluid" autoplay muted loop></video>
-                                <p class="card-text px-3 pt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-danger">PlayStore</a>
+         <!-- PROJECTS -->
+        <div class="section d-flex justify-content-center align-items-center vh-100 bg-dark">
+            <div class="section-width-double text-center justify-content-center">
+                <h1 class="text-center text-white title-text mb-4">Projects</h1>
+
+                <div id="projects_carousel" class="carousel slide">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <video src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" class="img-fluid" autoplay muted loop></video>
+                            <div class="carousel-caption">
+                                <h5>Project Name</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                                <a href="#" class="btn btn-primary btn-sm mx-1">Store 1</a>
+                                <a href="#" class="btn btn-primary btn-sm mx-1">Store 2</a>
+                                <br><br>
+                                <a class="link-light" href="#"><i data-feather="github"></i>&nbsp; GitHub repository</a>
                             </div>
-                            <div class="card-footer text-body-secondary p-4">   
-                                <a href="#" class="mx-3"><i data-feather="github"></i>&nbsp; GitHub repository</a>
-                            </div>                            
                         </div>
 
-                        <div class="card m-5 p-0" style="max-width: 20rem;">
-                            <h5 class="card-header p-4">
-                                Project Name
-                            </h5>
-                            <div class="card-body mb-3 p-0">
-                                <video src="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" class="img-fluid" autoplay muted loop></video>
-                                <p class="card-text px-3 pt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-danger">PlayStore</a>
+                        <div class="carousel-item">
+                            <video src="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" class="img-fluid" autoplay muted loop></video>
+                            <div class="carousel-caption">
+                                <h5>Project Name</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                                <a href="#" class="btn btn-primary btn-sm mx-1">Store 1</a>
+                                <a href="#" class="btn btn-primary btn-sm mx-1">Store 2</a>
+                                <br><br>
+                                <a class="link-light" href="#"><i data-feather="github"></i>&nbsp; GitHub repository</a>
                             </div>
-                            <div class="card-footer text-body-secondary p-4">   
-                                <a href="#" class="mx-3"><i data-feather="github"></i>&nbsp; GitHub repository</a>
-                            </div>                            
                         </div>
-                          
+
                     </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projects_carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#projects_carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+
             </div>
         </div>
-    </section>
 
+    </div>
 
-    <!-- YOUTUBE -->
-    <section id="youtube" class="container-fluid min-vh-100 bg-secondary py-5" data-bs-spy="scroll" data-bs-target="#main_nav">
-        <div class="row d-flex flex-column justify-content-center align-items-center h-100 g-0 my-5">
-            <div class="col-12 text-center text-light">
-                <h1>Youtube</h1>
-            </div>
-            <div class="col-12 my-5 text-center text-light">
-                <img class="rounded-circle" src="https://picsum.photos/300" alt="">
-            </div>
-            <div class="col-12 text-center text-light">
-                <p class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel risus in sapien consequat fermentum ac non libero. Aliquam sodales quam erat. Nunc vitae sodales lorem. Cras sit amet nisl eget orci sodales sodales. Praesent id risus leo. Integer posuere dui sem, id aliquam lacus auctor eu. Donec dignissim quis tellus in interdum. Nulla sagittis nibh eu massa sollicitudin, ultrices gravida tortor consequat. </p>
-                <a href="#" class="btn btn-danger">Youtube</a>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer class="container-fluid bg-dark border-top border-body p-5" data-bs-theme="dark">
-        Footer
-    </footer>
-
-
+    <!-- pagination script -->
+   <!--  <script src="js/pagination.js"></script> -->
+    <!-- bootstrap script bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- feather icons script -->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script>
-      feather.replace();
+        feather.replace();
     </script>
 
 </body>

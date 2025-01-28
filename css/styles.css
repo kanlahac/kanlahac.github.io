@@ -1,0 +1,47 @@
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    scroll-snap-align: start;
+}
+
+.about-me-bg{
+    background: url(../img/about_me_bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.vertical-container{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.section-width{
+    width: 20rem;
+}
+
+.section-width-double{
+    width: 40rem;
+}
+
+.title-text{
+    font-size: 48px;
+}
+
+.page-content {
+    display: none; 
+}
+
+.page-content.active {
+    display: flex; 
+}
+
+.page-link:hover{
+    cursor: pointer;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
