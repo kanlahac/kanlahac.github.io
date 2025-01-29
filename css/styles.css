@@ -5,6 +5,7 @@
 .section {
     scroll-snap-align: start;
 } */
+ 
 
 .bg-1{
     background: url(../img/bg_1.svg);
@@ -39,8 +40,8 @@
 }
 
 .section-padding{
-    padding-top: 25rem;
-    padding-bottom: 25rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 
 .section-width{
@@ -52,7 +53,7 @@
 }
 
 .title-text{
-    font-size: 48px;
+    font-size: 58px !important;
 }
 
 .page-content {
@@ -69,4 +70,68 @@
 
 .carousel-caption{
     background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.bounce-hover:hover{
+    animation: bounce;
+    animation-duration: 0.7s;
+}
+
+.swing-hover:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+}
+
+.rubberBand-hover:hover{
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+
+
+/* .carousel-control-prev{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.carousel-control-next{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+} */
+
+.bg-linear-black{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-position: center;
+    background-size: contain;
+}
+
+.bg-linear-black-top{
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-position: center;
+    background-size: contain;
+}
+
+.bg-linear-black-bottom{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-position: center;
+    background-size: contain;
+}
+
+.bg-linear-secondary-horizontal{
+    background: linear-gradient(to right, rgba(109, 118, 126, 0), rgb(109, 118, 126, 0.5), rgba(109, 118, 126, 0));
+    background-position: center;
+    background-size: contain;
+}
+
+.bg-circular-secondary{
+    background: radial-gradient(circle, rgb(109, 118, 126, 0.5), rgba(109, 118, 126, 0));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navigation-arrow{
+    position: fixed;
+    bottom: 2.5%;
+    right: 2.5%;
+    cursor: pointer;
+    color: white;
+    z-index: 99999;
 }
