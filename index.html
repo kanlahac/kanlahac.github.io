@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Kanlahac</title>
+    <link rel="icon" href="img/logo_white.svg" type="image/x-icon">
 
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -18,78 +19,69 @@
 
 
     <!-- NAVIGATION BUTTONS -->
+  
+    
 
 
     <div class="vertical-container bg-dark">
 
 
         <!-- ABOUT ME -->
-        <div class="section d-flex justify-content-center align-items-center vh-100 bg-1">
-            <div class="section-width">
-                <h1 class="text-center text-white title-text">I'm Kanlahac</h1>
-                <img src="" alt="">
-                <p class="text-center text-white">Crafting open-source video games for you to play, learn, and collaborate.</p>
+        <div class="section d-flex justify-content-center align-items-center vh-100 bg-dark">
+            <div class="section-width text-center">
+                <h1 class="text-center text-white title-text">Kanlahac</h1>
+                <h5 class="text-center text-secondary">Play - Collaborate - Learn</h5>
+                <img class="my-5" width="300px" src="img/logo_white.svg" alt="">
+                <p class="text-center text-white">Crafting <a class="link-secondary" href="https://opensource.org/osd" target="_blank">open-source</a> video games.</p>
             </div>
         </div>
 
 
-         <!-- ABOUT ME -->
-        <div class="section d-flex justify-content-center align-items-center vh-100 bg-2">
+        <!-- GODOT -->
+     <!--    <div class="section d-flex justify-content-center align-items-center bg-secondary" style="height: 300vh;">
+            <div class="section-width text-center ">
+                
+            </div>
+        </div> -->
+
+
+        <!-- PROJECTS -->
+        <!-- <div class="section section-padding d-flex justify-content-center align-items-center min-vh-100 bg-dark">
+            <div class="container text-center">
+                <h1 class="text-center text-secondary text-capitalize title-text mb-5 pb-2">Projects</h1>
+
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center align-items-center">
+
+                    <div class="col">
+                      <div class="card">
+                        <video src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" class="img-fluid card-img-top" autoplay muted loop></video>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="link-secondary" href="#"><small><i data-feather="github"></i>&nbsp;Repository</small></a>
+                        </div>
+                      </div>
+                    </div>
+
+                </div> -->
+
+                <!-- <video src="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" class="img-fluid rounded" autoplay muted loop></video> -->
+                
+
+       <!--      </div>
+        </div> -->
+
+
+        <!-- GODOT -->
+        <!-- <div class="d-flex justify-content-center align-items-center vh-100 bg-2">
             <div class="section-width text-center ">
                 <img class="mx-auto my-2" width="200px" src="https://godotengine.org/assets/press/logo_vertical_color_dark.svg" alt="">
                 <p class="text-center text-white">Powerful and open-source.</p>
-                <a class="btn btn-primary" href="https://godotengine.org/" target="_blank">Godot site</a>
+                <a class="btn btn-outline-light" href="https://godotengine.org/" target="_blank">Godot site</a>
             </div>
-        </div>
-
-
-         <!-- PROJECTS -->
-        <div class="section d-flex justify-content-center align-items-center vh-100 bg-3">
-            <div class="section-width-double text-center justify-content-center">
-                <h1 class="text-center text-white title-text mb-4">Projects</h1>
-
-                <div id="projects_carousel" class="carousel slide">
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <video src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" class="img-fluid" autoplay muted loop></video>
-                            <div class="carousel-caption">
-                                <h5>Project Name</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                                <a href="#" class="btn btn-primary btn-sm mx-1">Store 1</a>
-                                <a href="#" class="btn btn-primary btn-sm mx-1">Store 2</a>
-                                <br><br>
-                                <a class="link-light" href="#"><i data-feather="github"></i>&nbsp; GitHub repository</a>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <video src="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" class="img-fluid" autoplay muted loop></video>
-                            <div class="carousel-caption">
-                                <h5>Project Name</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                                <a href="#" class="btn btn-primary btn-sm mx-1">Store 1</a>
-                                <a href="#" class="btn btn-primary btn-sm mx-1">Store 2</a>
-                                <br><br>
-                                <a class="link-light" href="#"><i data-feather="github"></i>&nbsp; GitHub repository</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#projects_carousel" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button" data-bs-target="#projects_carousel" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
-            </div>
-        </div>
+        </div> -->
 
     </div>
 

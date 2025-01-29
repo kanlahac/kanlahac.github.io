@@ -1,10 +1,10 @@
-html {
+/* html {
     scroll-snap-type: y mandatory;
 }
 
 .section {
     scroll-snap-align: start;
-}
+} */
 
 .bg-1{
     background: url(../img/bg_1.svg);
@@ -27,9 +27,20 @@ html {
     background-repeat: no-repeat;
 }
 
+.custom-nav{
+    position: fixed;
+    top: 50%;
+    left: 10%;
+}
+
 .vertical-container{
     width: 100vw;
     min-height: 100vh;
+}
+
+.section-padding{
+    padding-top: 25rem;
+    padding-bottom: 25rem;
 }
 
 .section-width{
@@ -57,5 +68,5 @@ html {
 }
 
 .carousel-caption{
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
 }
