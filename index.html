@@ -21,14 +21,14 @@
 
 
     <!-- NAVIGATION BUTTONS -->
-    <a class="navigation-arrow animate__animated animate__rubberBand anima animate__infinite"><i data-feather="arrow-up" width="3rem" height="3rem"></i></a>
+    <a href="#landing" class="navigation-arrow animate__animated animate__rubberBand anima animate__infinite"><i data-feather="arrow-up" width="3rem" height="3rem"></i></a>
     
 
     <div class="vertical-container bg-dark">
 
 
-        <!-- ABOUT ME -->
-        <div class="section d-flex justify-content-center align-items-center vh-100 bg-linear-black-top">
+        <!-- LANDING -->
+        <div id="landing" class="section d-flex justify-content-center align-items-center vh-100 bg-linear-black-top">
             <div class="section-width text-center"> 
                 <div class="animate__animated animate__flipInX animate__delay-1s">
                     <h1 class="text-center text-white title-text swing-hover">Kanlahac</h1>
@@ -38,23 +38,63 @@
                     <img class="swing-hover" width="300px" src="img/logo_white.svg" alt="">
                 </div>
                 <p class="text-center text-white">Crafting <a class="link-secondary" href="https://opensource.org/osd" target="_blank">open-source</a> video games.</p>
-                <div class="btn-group mt-3" role="group" aria-label="Basic outlined example">
-                    <button type="button" class="btn btn-outline-light bounce-hover">Projects</button>
-                    <button type="button" class="btn btn-outline-light bounce-hover">About</button>
-                    <button type="button" class="btn btn-outline-light bounce-hover">Academy</button>
+                <div id="main_nav" class="btn-group mt-3" role="group" aria-label="Basic outlined example">
+                    <a href="#about_me" type="button" class="btn btn-outline-light">About me</a>
+                    <a href="#projects" type="button" class="btn btn-outline-light">Projects</a>
+                    <a href="#academy" type="button" class="btn btn-outline-light">Academy</a>
                 </div>
             </div>
         </div>
 
-         <!-- PLAY - PROJECTS -->
-        <div class="section d-flex justify-content-center align-items-center min-vh-100 section-padding bg-black">
+
+        <!-- ABOUT ME -->
+        <div id="about_me" class="section d-flex justify-content-center align-items-center min-vh-100 bg-black">
+            <div class="container text-center"> 
+                <h1 class="text-center text-white title-text swing-hover">About me</h1>
+                <h5 class="text-secondary">Hello!</h5>
+
+                <div class="my-5">
+                    <p class="text-light col-8 col-md-5 mx-auto">I am a passionate gamer and developer. <br> With nearly 10 years of experience, my goal is to create games that are fun to play, easy to teach, and open-source, useful for everyone.</p>
+                </div>
+
+                <h5 class="text-secondary">The next three words are the heart of my work</h5>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center align-items-center my-5 py-5">
+
+                    <div class="col py-3 bounce-hover">
+                        <i data-feather="heart"  width="150px" height="150px"></i>
+                        <h1 class="text-secondary swing-hover my-4">Play</h1>
+                        <p class="text-light px-5">Each game will be published on one or more platforms and you can play it</p>
+                        <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="col py-3 bounce-hover">
+                        <i data-feather="github"  width="150px" height="150px"></i>
+                        <h1 class="text-secondary swing-hover my-4">Collaborate</h1>
+                        <p class="text-light px-5">Each game will have its open repository and under the <a class="link-secondary" href="https://opensource.org/license/MIT" target="_blank">MIT license</a></p>
+                        <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="col py-3 bounce-hover">
+                        <i data-feather="book-open"  width="150px" height="150px"></i>
+                        <h1 class="text-secondary swing-hover my-4">Learn</h1>
+                        <p class="text-light px-5">Each game will have a practical course on how to develop it</p>
+                        <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PLAY - PROJECTS -->
+        <div id="projects" class="section d-flex justify-content-center align-items-center min-vh-100 section-padding bg-linear-black-bottom">
             <div class="container text-center">
                 <h1 class="text-center text-white title-text swing-hover">Let's play</h1>
-                <h5 class="text-secondary">
-                    Made with
-                    <br>
-                    <a href="https://godotengine.org/" target="_blank"><img class="rubberBand-hover" width="100px" src="https://godotengine.org/assets/press/logo_vertical_monochrome_dark.svg" alt=""></a>
-                </h5>
+                <h5 class="text-secondary">Check out my projects</h5>
                 
                 <!-- ==== CAROUSEL ==== -->
                 <div id="projects_carousel" class="carousel slide rounded p-2 mt-5" data-bs-touch="false">
@@ -72,7 +112,8 @@
                                         </div>
                                         <video src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" class="img-fluid card-img-top" autoplay muted loop></video>
                                         <div class="card-body">
-                                            <p class="card-text text-secondary">Action - Adventure</p>
+                                            <a href="https://godotengine.org/" target="_blank"><img class="rubberBand-hover" width="70px" src="https://godotengine.org/assets/press/logo_small_monochrome_dark.svg" alt=""></a>
+                                            <p class="card-text text-secondary mt-3">Action - Adventure</p>
                                             <a class="btn btn-outline-light bounce-hover mx-1" href="">Store</a>
                                             <a class="btn btn-outline-light bounce-hover mx-1" href="">Store</a>
                                         </div>
@@ -90,7 +131,8 @@
                                         </div>
                                         <video src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" class="img-fluid card-img-top" autoplay muted loop></video>
                                         <div class="card-body">
-                                            <p class="card-text text-secondary">Action - Adventure</p>
+                                            <a href="https://godotengine.org/" target="_blank"><img class="rubberBand-hover" width="70px" src="https://godotengine.org/assets/press/logo_small_monochrome_dark.svg" alt=""></a>
+                                            <p class="card-text text-secondary mt-3">Action - Adventure</p>
                                             <a class="btn btn-outline-light bounce-hover mx-1" href="">Store</a>
                                             <a class="btn btn-outline-light bounce-hover mx-1" href="">Store</a>
                                         </div>
@@ -108,7 +150,8 @@
                                         </div>
                                         <video src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" class="img-fluid card-img-top" autoplay muted loop></video>
                                         <div class="card-body">
-                                            <p class="card-text text-secondary">Action - Adventure</p>
+                                            <a href="https://godotengine.org/" target="_blank"><img class="rubberBand-hover" width="70px" src="https://godotengine.org/assets/press/logo_small_monochrome_dark.svg" alt=""></a>
+                                            <p class="card-text text-secondary mt-3">Action - Adventure</p>
                                             <a class="btn btn-outline-light bounce-hover mx-1" href="">Store</a>
                                             <a class="btn btn-outline-light bounce-hover mx-1" href="">Store</a>
                                         </div>
@@ -137,64 +180,42 @@
             </div>
         </div>
 
-        <!-- COLLABORATE -->
-        <div class="section d-flex justify-content-center align-items-center min-vh-100 bg-linear-black-bottom">
+
+        <!-- ACADEMY -->
+        <div id="academy" class="section d-flex justify-content-center align-items-center min-vh-100">
             <div class="container text-center"> 
-                <h1 class="text-center text-white title-text swing-hover">About</h1>
-                <h5 class="text-secondary">The next three words are the heart of my work</h5>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center align-items-center my-5 py-5">
-
-                    <div class="col py-5 bounce-hover">
-                        <i data-feather="heart"  width="150px" height="150px"></i>
-                        <h1 class="text-secondary swing-hover my-3">Play</h1>
-                        <p class="text-light px-5">Each game will be published on one or more platforms and you can play it</p>
-                    </div>
-                    <div class="col py-5 bounce-hover">
-                        <i data-feather="github"  width="150px" height="150px"></i>
-                        <h1 class="text-secondary swing-hover my-3">Collaborate</h1>
-                        <p class="text-light px-5">Each game will have its open repository and under the <a class="link-secondary" href="https://opensource.org/license/MIT" target="_blank">MIT license</a></p>
-                    </div>
-                    <div class="col py-5 bounce-hover">
-                        <i data-feather="book-open"  width="150px" height="150px"></i>
-                        <h1 class="text-secondary swing-hover my-3">Learn</h1>
-                        <p class="text-light px-5">Each game will have a practical course on how to develop it</p>
-                    </div>
-
+                <h1 class="text-center text-white title-text swing-hover">Academy</h1>
+                <h5 class="text-secondary">Learn to build each project practically and efficiently</h5>
+                <br class="mb-5">
+                <div style="width: 300px;" class="alert alert-warning mx-auto my-5" role="alert">
+                    <i data-feather="alert-triangle"></i> The academy is under construction
                 </div>
+                <i class="text-light animate__animated animate__flash anima animate__infinite animate__slow" data-feather="terminal"  width="200px" height="200px"></i>
             </div>
         </div>
 
 
-        <!-- ACADEMY -->
-        <!-- <div class="section d-flex justify-content-center align-items-center min-vh-100 bg-linear-black-top">
-            <div class="container text-center"> 
-                <h1 class="text-center text-white title-text swing-hover">Academy</h1>
-                <h5 class="text-secondary">Learn to build each project practically and efficiently, <br> with a dedicated course for each one, <br> without distractions or unnecessary information</h5>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center align-items-center my-5 py-5">
+        <!-- FOOTER -->
+        <footer class="section d-flex justify-content-center align-items-center py-5 bg-black">
+            <div class="container text-center my-5">
+                <div class="row row-cols-1 row-cols-lg-3 justify-content-center align-items-center">
 
-                    <div class="col py-5 bounce-hover">
-                        <i data-feather="heart"  width="150px" height="150px"></i>
-                        <h1 class="text-secondary swing-hover my-3">Play</h1>
-                        <p class="text-light px-5">Each game will be published on one or more platforms and you can play it</p>
+                    <div class="col">
+
                     </div>
-                    <div class="col py-5 bounce-hover">
-                        <i data-feather="github"  width="150px" height="150px"></i>
-                        <h1 class="text-secondary swing-hover my-3">Collaborate</h1>
-                        <p class="text-light px-5">Each game will have its open repository and under the <a class="link-secondary" href="https://opensource.org/license/MIT" target="_blank">MIT license</a></p>
+                    <div class="col">
+                        <h3 class="text-center text-white title-text">Kanlahac</h3>
+                        <img class="swing-hover my-5" width="200px" src="img/logo_white.svg" alt="">
+                        <br>
+                        <small class="text-secondary">Under <a class="link-secondary" href="https://opensource.org/license/MIT" target="_blank">MIT license</a></small>
+                    </div>
+                    <div class="col">
+
                     </div>
 
                 </div>
-                
             </div>
-        </div> -->
-
-
-        <!-- FOOTER -->
-        <!-- <footer class="ection d-flex justify-content-center align-items-center py-5 bg-black">
-            <div class="cotnainer text-center">
-                <h1 class="text-light">asdaf</h1>
-            </div>
-        </footer> -->
+        </footer>
 
     </div>
 
