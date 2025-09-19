@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SiGodotengine, SiUnity } from "react-icons/si";
 import { PiFileCSharpFill, PiLinkedinLogo } from "react-icons/pi";
 import { RiNextjsFill } from "react-icons/ri";
@@ -11,14 +12,20 @@ export default function About() {
 
                 <div className="avatar hover-rubberBand">
                     <div className="mask mask-squircle w-64">
-                        <img src="photo.jpg" />
+                        <Image 
+                            src="/photo.jpg" 
+                            alt="A photo of Jhony Alexander, kanlahac, video game developer" 
+                            width={256} 
+                            height={256} 
+                            unoptimized={true} 
+                        />
                     </div>
                 </div>
 
                 <div className="max-w-sm md:max-w-md lg:max-w-xl text-center">
 
                     <h2 className="text-5xl font-bold mb-10 hover-swing">Hello!</h2>
-                    <p>My name is <b>Jhony Alexander</b>. Video game developer with 9 years of programming expertise. I'm good at making creative ideas into real games. I love solving tough problems and I always work hard to make great games that people will love.
+                    <p>My name is <b>Jhony Alexander</b>. Video game developer with 9 years of programming expertise. I am good at making creative ideas into real games. I love solving tough problems and I always work hard to make great games that people will love.
                     </p>
 
                     <h2 className="text-3xl font-bold my-10 hover-swing">SKILLS</h2>
